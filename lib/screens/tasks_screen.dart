@@ -11,8 +11,7 @@ class TasksScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.lightBlueAccent,
         child: const Icon(Icons.add),
-        onPressed: () => {
-        },
+        onPressed: () => {},
       ),
       body: SafeArea(
         child: Column(
@@ -27,8 +26,8 @@ class TasksScreen extends StatelessWidget {
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const CircleAvatar(
+                children: const [
+                  CircleAvatar(
                     child: Icon(
                       Icons.list,
                       size: 30.0,
@@ -37,23 +36,22 @@ class TasksScreen extends StatelessWidget {
                     backgroundColor: Colors.white,
                     radius: 30.0,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 10.0,
                   ),
-                  const Text(
+                  Text(
                     'Todoey',
                     style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 50.0,
-                        fontWeight: FontWeight.w700,),
-                  ),
-                  const Text(
-                    '12 Taks',
-                    style: TextStyle(
                       color: Colors.white,
-                      fontSize: 18,
-                    )
+                      fontSize: 50.0,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
+                  Text('12 Taks',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                      )),
                 ],
               ),
             ),
